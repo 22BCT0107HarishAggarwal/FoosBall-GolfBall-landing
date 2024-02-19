@@ -1,0 +1,155 @@
+body
+{
+    margin: 0px;
+    width: 100%;
+}
+.teaser
+{
+    background-color: rgba(255, 107, 0, 1);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:auto;
+}
+.teaser p
+{
+    margin:0px ;
+    font-size: 80px;
+    font-weight: 600;
+    padding-left: 5%;
+    padding-top: 2%;
+    width: 0%;
+}
+.ifr
+{
+    width: 60%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: blueviolet;
+}
+.contact
+{
+    background-color: black;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.logo,.contactus,.socials
+{
+    float: left;
+    color: white;
+}
+.logo
+{
+    width: 55%;
+}
+.contactus
+{
+    width: 25%;
+}
+.socials
+{
+    width: 20%;
+}
+.contactus p, .socials p
+{
+    font-size: 32px;
+    margin-top: 30px;
+}
+ul
+{
+    padding: 0%;
+    margin: 0%;
+}
+ul li
+{
+    margin-top: 5%;
+    font-size: 18px;
+    list-style: none;
+}
+img
+{
+    height: 70%;
+    width: 90%;
+    position: relative;
+    top: 8vh;
+}
+@media (max-width:1000px)
+{
+    .teaser
+    {
+        width: 100%;
+        height: 50vh;
+    }
+    .logo
+    {
+        float: none;
+        width: 100%;
+    }
+    .contactus
+    {
+        position: relative;
+        top: 27vh;
+        left: -40%;
+    }
+    .ifr
+    {
+        width: 70%;
+        height: 50%;
+    }
+    .contact
+    {
+        height: 70vh;
+    }
+}
+
+@media (max-width:550px)
+{
+    .teaser
+    {
+        width: 100%;
+        height: 40vh;
+    }
+    .contact
+    {
+        height: 80vh;
+    }
+    .logo .socials .contactus
+    {
+        float: none;
+        width: inherit;
+    }
+    .ifr
+    {
+        width: 70%;
+        height: 50%;
+    }
+    .socials
+    {
+        margin-top: 3%;
+        position: relative;
+        left: 1%;
+    }
+    .teaser p
+    {
+        margin:0px ;
+        font-size: 50px;
+        font-weight: 600;
+        padding-left: 5%;
+        padding-top: 2%;
+        width: 0%;
+    }
+    .contactus
+    {
+        position: relative;
+        top: 2vh;
+        width: 100%;
+        left: 1%;
+    }
+}
